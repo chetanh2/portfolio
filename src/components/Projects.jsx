@@ -22,7 +22,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className=""
             >
-              <a href={prj.link} className="">
+              <a href={prj.link} target="_blank" className="">
                 <img
                   src={prj.image}
                   alt="project"
@@ -37,7 +37,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4 mt-10"
             >
-              <a href={prj.link}>
+              <a href={prj.link} target="_blank">
                 <h3 className="mb-2 font-semibold text-2xl">{prj.title}</h3>
               </a>
               <p className="mb-4 text-stone-400">{prj.description}</p>
