@@ -21,7 +21,7 @@ const Experience = () => {
                         </h3>
                         <p className='mb-4 text-stone-400'>{exp.description}</p>
                         {exp.technologies.map((tech,index)=>(
-                            <span className='mr-2 mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300'>{tech}</span>
+                            <div className='mr-2 inline-block  mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300'>{tech}</div>
                         ))}
                     </motion.div>
                 </div>

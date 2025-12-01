@@ -15,18 +15,18 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((prj, index) => (
-          <div key={index} className="mb-8 flex md:gap-20 flex-wrap lg:justify-center ">
+          <div key={index} className="mb-8 flex md:gap-4 flex-wrap lg:justify-center ">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className=""
+              className="h-full w-full max-w-xl lg:w-1/4"
             >
               <a href={prj.link} target="_blank" className="">
                 <img
                   src={prj.image}
                   alt="project"
-                  className="mb-6 rounded-xl object-contain h-64 w-64"
+                  className="mb-6 rounded-xl object-cover h-52 w-52 md:h-64 md:w-64"
                 />
               </a>
             </motion.div>
@@ -42,13 +42,13 @@ const Projects = () => {
               </a>
               <p className="mb-4 text-stone-400">{prj.description}</p>
               {prj.technologies.map((tech, index) => (
-                <span
+                <div
                   key={index}
-                  className="mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
+                  className="mr-2 inline-block mt-3 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
                 >
                   {" "}
                   {tech}{" "}
-                </span>
+                </div>
               ))}
             </motion.div>
           </div>

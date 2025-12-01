@@ -9,6 +9,7 @@ import Swiggy from "../assets/projects/Swiggy.jpg";
 import Swiggy2 from "../assets/projects/swiggy (2).jpg";
 import Netflix from "../assets/projects/netflixLogo.jpg";
 import InterviewDashboard from "../assets/projects/interview-management-dashboar.png";
+import CodersCoffee from "../assets/projects/codersCofee.png";
 
 export const HERO_CONTENT = `I am a passionate front end developer with a knack for crafting robust and scalable web applications. With 3.6 years of hands-on experience, I have honed my skills in front-end technologies like React,React Native and Next.js, as well as back-end technologies like Node.js, and Express. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -35,6 +36,14 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Coders Coffee",
+    image: CodersCoffee,
+    description:
+      "Modern page for a coffee shop, featuring a user-friendly interface, menu, and online ordering capabilities.",
+    technologies: ["HTML", "CSS", "React", "Javascript", "Tailwind CSS","Framer Motion"],
+    link: "https://modern-website-using-framer-motion.vercel.app/",
+  },
   {
     title: "Grand Theft Auto VI",
     image: gta6,
